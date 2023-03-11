@@ -1,1 +1,5 @@
-print(chr(1))
+string = "hello world, hello"
+substring = "hello"
+
+index = string.find(substring)
+print(index)
