@@ -1,6 +1,4 @@
-import sys
-
-str = sys.stdin.readline().upper()
+str = input().upper()
 unique = list(set(str))
 
 cntLst = []
@@ -11,5 +9,4 @@ for s in unique:
 if cntLst.count(max(cntLst)) > 1:
     print('?')
 else:
-    max_index = cntLst.index(max(cntLst))
-    print(unique[max_index])
+    print(unique[cntLst.index(max(cntLst))])
