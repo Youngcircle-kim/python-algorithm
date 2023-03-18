@@ -1,8 +1,11 @@
 import sys
-lst = []
-for _ in range(int(sys.stdin.readline())):
-    lst.append(int(sys.stdin.readline()))
-lst = sorted(lst)
+lst = [0] * 10001
+# 계수 정렬
+for i in range(int(sys.stdin.readline())):
+    n = int(sys.stdin.readline())
+    lst[n-1] += 1
 
-for i in range(len(lst)):
-    print(lst[i])
+for i in range(10001):
+    if lst[i] != 0:
+        for j in range(lst[i]):
+            print(i+1)
