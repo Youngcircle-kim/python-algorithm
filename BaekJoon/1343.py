@@ -8,7 +8,6 @@ for i in range(len(lst)):
         print(-1)
         sys.exit()
 
-
 for i in range(len(lst)):
     cnt = 0
     for j in range(len(lst[i])):
