@@ -1,4 +1,3 @@
-import os
 import sys
 
 lst = list(map(str, input().split(".")))
