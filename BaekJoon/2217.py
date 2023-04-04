@@ -6,7 +6,7 @@ n = int(sys.stdin.readline())
 
 for _ in range(n):
     lst.append(int(sys.stdin.readline()))
-lst = sorted(lst, reverse=True)
+lst.sort(reverse=True)
 
 for i in range(len(lst)):
     if max < lst[i] * (i+1):
